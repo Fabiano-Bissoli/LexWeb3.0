@@ -1,0 +1,3 @@
+br\com\braseg\runners\TestRunner.class
+br\com\braseg\steps\ConsultaDossieSteps.class
+br\com\braseg\config\RegistryCucumber.class

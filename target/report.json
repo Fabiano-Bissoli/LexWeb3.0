@@ -1,0 +1,447 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 9,
+        "name": "Logar no sistema LEXWeb 3.0",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 11275057300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que estou acessando o sistema LEXWeb",
+            "match": {
+              "location": "UserLiberadoBDD.queAcessoSistemaLEXWeb()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1102479000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "seleciono a opcao Numero Dossie no campo Consulta por",
+            "match": {
+              "location": "UserLiberadoBDD.clicarNoConsultaPor()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1100163600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "seleciono a opcao Contem no campo Tipo de Operacao",
+            "match": {
+              "location": "UserLiberadoBDD.clicarNoTipoDeOperacao()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1089873400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Digito os dados no campo Conteudo",
+            "match": {
+              "location": "UserLiberadoBDD.clicarNoConteudo()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1071282800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Clico no botao Consultar",
+            "match": {
+              "location": "UserLiberadoBDD.clicarBtnConsultar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 2040904800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "visualizo o resultado na grid",
+            "match": {
+              "location": "UserLiberadoBDD.visualisoConsulta()"
+            },
+            "keyword": "Entao "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-18T21:58:44.280Z",
+        "line": 17,
+        "name": "Verificar tela de Alteracao Dossie com os campos editaveis",
+        "description": "",
+        "id": "funcionario-ou-terceiro-com-a-acesso-ao-modulo-dossie;verificar-tela-de-alteracao-dossie-com-os-campos-editaveis",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 118712100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "clico no botao Alterar Dossie de qualquer dossie",
+            "match": {
+              "location": "UserLiberadoBDD.clicarBtnAlterarDossie()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 4437451900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "visualizo a tela de Alteracao Dossie com todos os campos editaveis",
+            "match": {
+              "location": "UserLiberadoBDD.visualisoTelaAlterarDossie()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@funcionais"
+          }
+        ]
+      }
+    ],
+    "name": "Funcionario ou terceiro com a acesso ao modulo Dossie",
+    "description": "  Como funcionario Bradesco Seguro ou terceiro, ativo no sistema\n  Gostaria de Alterar ou Visualizar o grupo Campos Adicionais da tela de Dossie\n  Para que eu possa Alterar dados dos processos judiciais",
+    "id": "funcionario-ou-terceiro-com-a-acesso-ao-modulo-dossie",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/ConsultaDossie/1-LogarNoSistemaComAcessoAoMuduloDossie.feature",
+    "tags": [
+      {
+        "name": "@funcionais",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 9,
+        "name": "Logar no sistema LEXWeb 3.0",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 10409736700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que estou acessando o sistema LEXWeb com perfil restrito",
+            "match": {
+              "location": "UsuarioSemPermissaoEnviarMensagemBDD.queAcessoSistemaLEXWeb()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1089736200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "seleciono a opcao Numero Dossie no campo Consulta por com perfil restrito",
+            "match": {
+              "location": "UsuarioSemPermissaoEnviarMensagemBDD.clicarNoConsultaPor()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1078577400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "seleciono a opcao Contem no campo Tipo de Operacao com perfil restrito",
+            "match": {
+              "location": "UsuarioSemPermissaoEnviarMensagemBDD.clicarNoTipoDeOperacao()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1072563500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Digito os dados no campo Conteudo com perfil restrito",
+            "match": {
+              "location": "UsuarioSemPermissaoEnviarMensagemBDD.clicarNoConteudo()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1073935000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Clico no botao Consultar com perfil restrito",
+            "match": {
+              "location": "UsuarioSemPermissaoEnviarMensagemBDD.clicarBtnConsultar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 2033203000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "visualizo o resultado na grid com perfil restrito",
+            "match": {
+              "location": "UsuarioSemPermissaoEnviarMensagemBDD.visualisoConsulta()"
+            },
+            "keyword": "Entao "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-18T21:59:06.563Z",
+        "line": 17,
+        "name": "Verificar tela de Alteracao Dossie com alguns campos editaveis",
+        "description": "",
+        "id": "funcionario-ou-terceiro-restrito-enviar-mensagem-e-solicitar-subsidio;verificar-tela-de-alteracao-dossie-com-alguns-campos-editaveis",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 114405000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "clico no botao Alterar Dossie de qualquer dossie com perfil restrito",
+            "match": {
+              "location": "UsuarioSemPermissaoEnviarMensagemBDD.clicarBtnAlterarDossie()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 4402953600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "visualizo a tela de Alteracao Dossie com todos os campos editaveis com perfil restrito",
+            "match": {
+              "location": "UsuarioSemPermissaoEnviarMensagemBDD.visualisoTelaAlterarDossie()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: invalid session id\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027LBR-PE0772BQ\u0027, ip: \u002710.130.25.248\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\\Users\\fbissoli\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:51439}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: fd80ea7317e2c8dbbab26eeb95c2f941\n*** Element info: {Using\u003dxpath, value\u003d/html/body/app-root/clr-main-container/app-alteracao-dossie/div/div[1]/div/div/div[2]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat br.com.braseg.config.consultas.ChromeUsuarioLiberado.alteracaoDossie(ChromeUsuarioLiberado.java:72)\r\n\tat br.com.braseg.consultas.steps.UsuarioSemPermissaoEnviarMensagemBDD.visualisoBtnsMensagemESolSub(UsuarioSemPermissaoEnviarMensagemBDD.java:60)\r\n\tat ✽.visualiso os botoes Mensagem e Solicita Subsidios desabilitados(file:src/test/resources/features/ConsultaDossie/2-LogarSemDireitoEnviarMensagemESolicitarSubsidios.feature:20)\r\n",
+              "duration": 4022358000,
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "visualiso os botoes Mensagem e Solicita Subsidios desabilitados",
+            "match": {
+              "location": "UsuarioSemPermissaoEnviarMensagemBDD.visualisoBtnsMensagemESolSub()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 612400,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "nao tenho permissao para enviar mensagem e solicitar subsidios",
+            "match": {
+              "location": "UsuarioSemPermissaoEnviarMensagemBDD.semPermissaoEnviarESolicitar()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@funcionais"
+          }
+        ]
+      }
+    ],
+    "name": "Funcionario ou terceiro restrito enviar mensagem e solicitar subsidio",
+    "description": "  Como funcionario Bradesco Seguro ou terceiro, ativo no sistema e com restricoes\n  Gostaria de logar no sistema LEXWeb3.0\n  Para que eu nao possa enviar mensagem e nem solicitar subsidio",
+    "id": "funcionario-ou-terceiro-restrito-enviar-mensagem-e-solicitar-subsidio",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/ConsultaDossie/2-LogarSemDireitoEnviarMensagemESolicitarSubsidios.feature",
+    "tags": [
+      {
+        "name": "@funcionais",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 9,
+        "name": "Logar no sistema LEXWeb 3.0",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 10227348600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que estou acessando o sistema LEXWeb com perfil restrito a tela de alteracao",
+            "match": {
+              "location": "UsuarioSemPermissaoTelaAlteracaoBDD.queAcessoSistemaLEXWeb()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1089275800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "seleciono a opcao Numero Dossie no campo Consulta por com restricao a tela de alteracao",
+            "match": {
+              "location": "UsuarioSemPermissaoTelaAlteracaoBDD.clicarNoConsultaPor()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1076957000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "seleciono a opcao Contem no campo Tipo de Operacao com restricao a tela de alteracao",
+            "match": {
+              "location": "UsuarioSemPermissaoTelaAlteracaoBDD.clicarNoTipoDeOperacao()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1071968200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Digito os dados no campo Conteudo com restricao a tela de alteracao",
+            "match": {
+              "location": "UsuarioSemPermissaoTelaAlteracaoBDD.clicarNoConteudo()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1072266700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Clico no botao Consultar com restricao a tela de alteracao",
+            "match": {
+              "location": "UsuarioSemPermissaoTelaAlteracaoBDD.clicarBtnConsultar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 2032637300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "visualizo o resultado na grid com o botao Alterar desabilitado",
+            "match": {
+              "location": "UsuarioSemPermissaoTelaAlteracaoBDD.visualisoConsulta()"
+            },
+            "keyword": "Entao "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-18T21:59:31.896Z",
+        "line": 17,
+        "name": "Verificar se o botao Alterar esta desabilitado",
+        "description": "",
+        "id": "funcionario-ou-terceiro-restrito-a-acessar-a-tela-de-alteracao;verificar-se-o-botao-alterar-esta-desabilitado",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 118999100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "clico no botao Alterar Dossie desabilitado de qualquer dossie",
+            "match": {
+              "location": "UsuarioSemPermissaoTelaAlteracaoBDD.clicarBtnAlterarDossie()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "n�o tenho permissao para alterar nenhum dossie",
+            "match": {},
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@funcionais"
+          }
+        ]
+      }
+    ],
+    "name": "Funcionario ou terceiro restrito a acessar a tela de alteracao",
+    "description": "  Como funcionario Bradesco Seguro ou terceiro, ativo no sistema e com restricoes\n  Gostaria de logar no sistema LEXWeb3.0\n  Para que eu nao possa ter acesso a tela de alteracao",
+    "id": "funcionario-ou-terceiro-restrito-a-acessar-a-tela-de-alteracao",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/ConsultaDossie/3-UsuarioSemPermissaoTelaDeAlteracao.feature",
+    "tags": [
+      {
+        "name": "@funcionais",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
